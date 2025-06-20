@@ -1,4 +1,13 @@
-const App = () => {
-  return <h2>Sidebar Starter</h2>;
-};
-export default App;
+import { Home, Modal, Sidebar } from './components'
+
+const App = ({ children }) => {
+  return (
+    <main>
+      <Home />
+      <Modal />
+      <Sidebar />
+    </main>
+  )
+}
+
+export default App
